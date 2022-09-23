@@ -9,6 +9,16 @@ class Player:
     @property
     def name(self):
         return self.__name
+    
+    @name.setter
+    def name(self, value)
+        if not isinstance(value, str):
+            self.__name = value
+        else:
+            return("Name must be a string!")
+    
+    def modify_ratings(self)
+        return "Modification unavailable. All ratings are fixed!"
 
     def __str__(self):
         return f'Player: {self.__name}\n' + \
